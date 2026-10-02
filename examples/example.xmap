@@ -1,0 +1,7 @@
+# XMAP File Version: 0.2 (synthetic example)
+#h XmapEntryID	QryContigID	RefContigID	Orientation	Confidence	Alignment
+#f int	int	int	string	float	string
+1	101	9	+	30.0	(6237,1)(6238,2)(6239,3)(6240,4)
+2	102	9	+	30.0	(6237,1)(6238,2)(6239,3)(6240,4)
+3	103	9	+	30.0	(6237,1)(6238,2)(6239,3)(6240,4)
+4	104	12	+	20.0	(100,1)(101,2)
