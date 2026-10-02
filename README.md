@@ -54,8 +54,6 @@ cd ogm-tandem-repeat-sizing
 pip install -r requirements.txt
 ```
 
-A virtual environment (`python -m venv .venv`) or conda environment is recommended.
-
 ---
 
 ## Usage
