@@ -6,7 +6,7 @@ For every molecule spanning a locus of interest, the script measures the distanc
 
 It was developed for the **G4C2 hexanucleotide expansion in *C9orf72***, which is the default target, but every locus-specific parameter can be set from the command line, so the same script can be used for any other repeat expansion covered by two flanking labels.
 
-> **Status:** research code accompanying a manuscript in preparation. Estimates are derived from label spacing and are not base-pair-resolution measurements (see [Limitations](#limitations)).
+> **Status:** research code accompanying a manuscript in preparation. Estimates are derived from label spacing and are not base-pair-resolution measurements.
 
 Developed at the Genomics Platform, Department of Translational Research, Institut Curie.
 
@@ -21,7 +21,6 @@ Developed at the Genomics Platform, Department of Translational Research, Instit
 - [Output](#output)
 - [Using the script on another locus](#using-the-script-on-another-locus)
 - [Quick test](#quick-test)
-- [Limitations](#limitations)
 - [Repository structure](#repository-structure)
 
 ---
@@ -158,16 +157,6 @@ QryContigID,distance_bp,repeats
 
 ---
 
-## Limitations
-
-- Sizes are **inferred from label spacing** on optically measured molecules. Precision is bounded by OGM resolution and by stretch/sizing error, and does not reach base-pair resolution. Interpret estimates accordingly and validate against an orthogonal method where possible.
-- Only molecules **spanning both flanking labels** are sized.
-- When several matches of the label pair exist on a molecule, only the first is used.
-- The script reports one value per molecule and does **not** assign alleles, cluster molecules or call genotypes.
-- Defaults are tied to a specific reference and labeling scheme (see the note under [Arguments](#arguments)).
-
----
-
 ## Repository structure
 
 ```
@@ -179,7 +168,6 @@ ogm-tandem-repeat-sizing/
 │   ├── example.xmap              # synthetic alignments
 │   ├── example_q.cmap            # synthetic query maps
 │   └── expected_output.csv       # expected result
-├── CITATION.cff
 ├── LICENSE
 ├── .gitignore
 └── README.md
