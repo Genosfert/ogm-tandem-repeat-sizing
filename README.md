@@ -48,7 +48,7 @@ If a molecule matches the label pair more than once, only the first match is kep
 Requirements: Python 3.8+ and `pandas`.
 
 ```bash
-git clone https://github.com/<your-user>/ogm-tandem-repeat-sizing.git
+git clone https://github.com/Genosfert/ogm-tandem-repeat-sizing.git
 cd ogm-tandem-repeat-sizing
 pip install -r requirements.txt
 ```
